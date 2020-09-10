@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>
+            Javascript practice
+        </title>
+
+        <script>
+            function myFunction() {
+                document.getElementById("demo3").innerHTML = "Paragraph changed.";
+            }
+        </script>
+        
+    </head>
+    <body>
+          <h1>What can javascript do? </h1>
+
+          <p id = "demo">Javascript can change html content. </p>
+          <button type = "button" onclick = 'document.getElementById("demo").innerHTML = "Hello Javascript! "'> clickme! </button>
+
+          <p>Now javascript changes the value of source attribute of an image.</p>
+          <button type = "button" onclick = 'document.getElementById("myImage").src = "bulbon.PNG"'>Turn on the bulb </button>
+          <img id = 'myImage' src = 'bulboff.PNG' style = 'width:100px'>
+          <button type = "button" onclick = 'document.getElementById("myImage").src = "bulboff.PNG"'> Turn off the bulb</button>
+         
+          <p id = "demo1">Javascript can change the style of an html element.</p>
+          <button type = "button" onclick = 'document.getElementById("demo1").style.display = "none"'> Click to hide  </button>
+          <button type = "button" onclick = 'document.getElementById("demo1").style.display = "block"'>click to see hidden elements</button>
+
+          <p id = "demo2">
+              Hello World!
+            </p>
+          <script>
+           document.getElementById("demo2").innerHTML = "My First Javascript" ;
+          </script>
+
+          <h2> Javascript in head</h2>
+          <p id = "demo3">
+              This is a practice of javascrip in head tag.
+          </p>
+          <button type = 'button' onclick = "myFunction()">Try it!</button>
+
+
+
+    </body>
+</html>
