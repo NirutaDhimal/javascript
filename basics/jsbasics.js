@@ -199,3 +199,66 @@ x--;
 console.log(x);
 */
 
+
+
+/*****************************
+* CODING CHALLENGE 1
+*/
+
+/*
+Mark and John are trying to compare their BMI (Body Mass Index), which is calculated using the formula: BMI = mass / height^2 = mass / (height * height). (mass in kg and height in meter).
+
+1. Store Mark's and John's mass and height in variables
+2. Calculate both their BMIs
+3. Create a boolean variable containing information about whether Mark has a higher BMI than John.
+4. Print a string to the console containing the variable from step 3. (Something like "Is Mark's BMI higher than John's? true"). */
+
+//Solution
+/*
+function BMI(m,h){
+       return (m / h**2);
+}
+
+var markMass, johnMass, markHeight, johnHeight;
+markMass = prompt("Enter mass of Mark in kg");
+markHeight = prompt("Enter height of Mark in meter");
+johnMass = prompt("Enter mass of John in kg");
+johnHeight = prompt("Enter height of John in meter");
+markBMI = BMI(markMass, markHeight);
+jhonBMI = BMI(johnMass, johnHeight);
+var decide = markBMI > jhonBMI;
+console.log("IS Mark's BMI higher than John's? " + decide);
+*/
+
+
+//Javascript data types
+/*
+var length = 16;                               //Number
+var lastName = "Johnson";                     //string
+var x = {firstName:"John", lastName: "Doe"};  //object
+var y = "Volvo" + 16;
+var z = 20 + 5 + "Volvo";
+var x1 = 34.0;
+var x2 = 32;
+var y1 = 125e5;
+var y2 = 125e-5;
+var x1Greater = x1 > x2;
+console.log(x1Greater);
+var cars = ["Volvo", "Audi", "BMW", "Aston Martin"];    //Array
+console.log(typeof length);
+console.log(typeof lastName);
+console.log(typeof x);
+console.log(typeof y);
+console.log(z);
+console.log(typeof x1);
+console.log(typeof x2);
+console.log(typeof y1);
+console.log(typeof y2);
+console.log(typeof x1Greater);
+console.log(typeof cars);
+console.log(typeof function func(){});
+*/
+
+
+
+
