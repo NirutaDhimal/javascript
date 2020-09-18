@@ -260,5 +260,22 @@ console.log(typeof function func(){});
 */
 
 
+//JS Functions
+
+//return product of two passed arguments
+function product(p1,p2){
+       return p1*p2;
+}
+var x = product(4,5);
+console.log(x);
+
+//Convert Fahrenheit to celsius
+function toCelsius(fahrenheit){
+       return (5/9) * (fahrenheit-32);
+}
+console.log(toCelsius(77));
+console.log(toCelsius(105));
+var text = "The temperature is " + toCelsius(196) + " celsius" ;
+console.log(text);
 
 
