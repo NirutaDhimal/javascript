@@ -263,6 +263,7 @@ console.log(typeof function func(){});
 //JS Functions
 
 //return product of two passed arguments
+/*
 function product(p1,p2){
        return p1*p2;
 }
@@ -277,5 +278,22 @@ console.log(toCelsius(77));
 console.log(toCelsius(105));
 var text = "The temperature is " + toCelsius(196) + " celsius" ;
 console.log(text);
+*/
+
+//JS object
+var car = {type: "Fait", model: "500", weight: "500kg", color: "black"};
+console.log("The car is of type " + car.type);
+var person = {
+       firstName: "Niruta" ,
+       lastName: "Dhimal" ,
+       age: 21,
+       eyecolor: "black",
+       fullName: function() {
+              return this.firstName + " " + this.lastName;
+       }
+}
+console.log(person.age);
+console.log(person["firstName"]);
+console.log(person.fullName());
 
 
