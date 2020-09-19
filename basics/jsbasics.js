@@ -281,6 +281,7 @@ console.log(text);
 */
 
 //JS object
+/*
 var car = {type: "Fait", model: "500", weight: "500kg", color: "black"};
 console.log("The car is of type " + car.type);
 var person = {
@@ -295,5 +296,93 @@ var person = {
 console.log(person.age);
 console.log(person["firstName"]);
 console.log(person.fullName());
+*/
 
-
+//Javascript strings
+//Javascrip strings are used for sorting or manipulating text.
+var x = "John Doe";
+var car1 = 'Volvo xC60';
+var text = "It's alright";
+console.log(x);
+console.log(car1);
+console.log(text);
+console.log(text.length);   //gives the length of the string
+var x = "We are the so called \"vikings\" from the north.";  //escape characters "\'", '\"', "\\"
+console.log(x);
+//strings can also be objects
+var x = "John";
+var y = new String("John");    //Don't create strings as objects it slows down execution speed. The new keyword complicates the code. It can produce unexpected results.
+console.log(typeof x);
+console.log(typeof y);    
+var str = "Please locate where 'locate' occurs!";
+console.log(str);
+var pos = str.indexOf("locate");  //indexOf method returns the index of first occurance of specified text in the string
+console.log(pos);
+var lastPos = str.lastIndexOf("locate"); //lastIndexOf method returns the last occurance of specified text in the string
+console.log(lastPos);
+pos = str.indexOf("of");  //Both indexof and lastIndexOf returns -1 if the specified text is not found in the string
+console.log(pos);
+lastPos = str.lastIndexOf("of");
+console.log(lastPos);
+pos = str.lastIndexOf("locate",15);
+/*lastIndexOf() method searches backwards(from end to the beginning), meaning if the second parameter is 15, the search starts at position 15 
+and searches to the beginning of the string.*/
+console.log(pos);
+var locatePos = str.search("locate");
+console.log(locatePos);
+//Extracting String parts
+/* slice(start,end)
+substring(start, end)
+substr(start, length)*/
+var fruits = "apple, banana, mango, cherry, grapes";
+var res = fruits.slice(7,25);
+console.log(res);
+console.log(fruits.slice(-12,-2));
+console.log(fruits.slice(7));
+console.log(fruits.slice(-20));
+//substring method 
+//cannot accept negative indexes
+console.log(fruits.substring(7,20));
+console.log(fruits.substring(7));
+//substr method
+console.log(fruits.substr(7,6));
+console.log(fruits.substr(7));
+console.log(fruits.substr(-7));
+console.log(fruits.substr(-25,10));
+//Replacing string content
+var str2 = str.replace("locate","location");
+console.log(str2);
+var str3 = str2.replace(/Location/i, "locate");
+console.log(str3);
+var str4 = str.replace(/locate/g, "find");
+console.log(str4);
+//toUpperCase and toLowerCase
+var ucase = str.toUpperCase();
+var lcase = str.toLowerCase();
+console.log(ucase);
+console.log(lcase);
+//concat method
+var txt1 = "Hello";
+var txt2 = "World";
+var txt3 = txt1.concat(" ",txt2);
+console.log(txt3);
+console.log(txt1.concat(", ",txt2));
+//trim() method
+var txt = "         Hello World!   ";
+console.log(txt);
+console.log(txt.trim());
+//Extracting string characters
+/*charAt(position)
+charCodeAt(position)
+Property access []
+*/
+console.log(txt3.charAt(0));
+console.log(txt3.charCodeAt(0));
+console.log(txt3[0]);
+//converting string to array using split() method
+var x = "a,b,c,d,e"
+console.log(x);
+var arr = x.split(",");
+for(i = 0; i < arr.length; i++) {
+       console.log(arr[i]);
+}
