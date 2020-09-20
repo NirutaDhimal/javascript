@@ -300,6 +300,7 @@ console.log(person.fullName());
 
 //Javascript strings
 //Javascrip strings are used for sorting or manipulating text.
+/*
 var x = "John Doe";
 var car1 = 'Volvo xC60';
 var text = "It's alright";
@@ -327,6 +328,7 @@ console.log(lastPos);
 pos = str.lastIndexOf("locate",15);
 /*lastIndexOf() method searches backwards(from end to the beginning), meaning if the second parameter is 15, the search starts at position 15 
 and searches to the beginning of the string.*/
+/*
 console.log(pos);
 var locatePos = str.search("locate");
 console.log(locatePos);
@@ -334,6 +336,7 @@ console.log(locatePos);
 /* slice(start,end)
 substring(start, end)
 substr(start, length)*/
+/*
 var fruits = "apple, banana, mango, cherry, grapes";
 var res = fruits.slice(7,25);
 console.log(res);
@@ -376,6 +379,7 @@ console.log(txt.trim());
 charCodeAt(position)
 Property access []
 */
+/*
 console.log(txt3.charAt(0));
 console.log(txt3.charCodeAt(0));
 console.log(txt3[0]);
@@ -386,3 +390,35 @@ var arr = x.split(",");
 for(i = 0; i < arr.length; i++) {
        console.log(arr[i]);
 }
+*/
+
+//JS Numbers
+var x = 43.5;
+var y = 4;
+var z = 143e7;
+var a = 143e-6;
+var x = 0.1+0.2;
+console.log(x);
+x = (0.1 * 10 + 0.2 * 10) / 10;
+console.log(x);
+// NaN (not a number)
+var x = 100 / "apple";
+console.log(x);
+// NaN is a number: type of NaN returns number
+console.log(typeof NaN);
+// Infinity or (-Infinity)
+// is a value javascript will return if you calculate a number outside the largest possible value
+var x = 2 / 0;
+var y = -2 / 0;
+console.log(x);
+console.log(y);
+console.log(typeof Infinity);
+//javascript interprets numeric constants as hexadecimal if they are preceded by 0x
+var x = 0xFF;
+console.log(x);
+// tostring() method can be used to output number from base 2 to 36
+var myNumber = 32;
+console.log(myNumber.toString(2));
+console.log(myNumber.toString(10));
+console.log(myNumber.toString(8));
+console.log(myNumber.toString(16));
