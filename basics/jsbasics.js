@@ -393,6 +393,7 @@ for(i = 0; i < arr.length; i++) {
 */
 
 //JS Numbers
+/*
 var x = 43.5;
 var y = 4;
 var z = 143e7;
@@ -422,3 +423,57 @@ console.log(myNumber.toString(2));
 console.log(myNumber.toString(10));
 console.log(myNumber.toString(8));
 console.log(myNumber.toString(16));
+*/
+
+//Numbers methods
+
+//toString() method returns a number as a string
+console.log((123).toString());
+console.log((50 + 5).toString());
+
+//toExponential() method
+var x = 15553.9988
+console.log(x.toExponential(3));
+console.log(x.toExponential(2));
+
+//toFixed() method
+console.log(x.toFixed(2));
+console.log(x.toFixed(0));
+
+//toPrecision() method
+var x = 55.2359;
+console.log(x.toPrecision(2));
+console.log(x.toPrecision(5));
+
+//Converting variables to numbers
+//global javascript methods
+
+console.log(Number(true));
+console.log(Number(false));
+console.log(Number("  10"));
+console.log(Number("10"));
+console.log(Number("10.33"));
+console.log(Number("10,33"));
+console.log(Number("10 33"));
+console.log(Number("John"));
+console.log(Number(new Date("2020-09-20")));
+
+console.log(parseInt("10.33"));
+console.log(parseInt("10 20 30"));
+console.log(parseInt("10 years"));
+console.log(parseInt("years 10"));
+
+console.log(parseFloat("10.33"));
+console.log(parseFloat("10 20 30"));
+console.log(parseFloat("10 years"));
+console.log(parseFloat("years 10"));
+
+//Number properties
+console.log(Number.MAX_VALUE);
+console.log(Number.MIN_VALUE);
+console.log(Number.POSITIVE_INFINITY);
+console.log(Number.NEGATIVE_INFINITY);
+console.log(Number.NaN);
+
+
+
