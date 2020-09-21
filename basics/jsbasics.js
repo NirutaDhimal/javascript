@@ -478,6 +478,7 @@ console.log(Number.NaN);
 */
 
 //Javascript Arrays
+/*
 var cars = ["Saab", "Volvo", "BMW", "SUV"];
 var students = new Array("Niruta", "Darpan", "Avaya");
 console.log(cars[0]);
@@ -523,6 +524,44 @@ fruits.push("Watermelon");
 console.log(fruits);
 console.log(Array.isArray(fruits));
 document.getElementById("demo2").innerHTML = fruits instanceof Array;
+*/
+
+//JS Array Methods
+var fruits = ["Apple", "Mango", "Orange", "Banana", "Grapes", "Guava"];
+var x = fruits.toString()
+/*
+document.getElementById("demo").innerHTML = x;
+document.getElementById("demo1").innerHTML = fruits.join("*");
+fruits.pop();
+document.getElementById("demo2").innerText = fruits;
+document.getElementById("demo3").innerHTML = fruits.push("kiwi");
+*/
+console.log(fruits);
+fruits.shift();
+document.getElementById("demo").innerText = fruits;
+console.log(fruits.unshift("Apple"));
+document.getElementById("demo1").innerText = fruits;
+delete fruits[0];
+console.log(fruits);
+var removed = fruits.splice(2,2,"Lemon","Cherry", "Guava");
+document.getElementById("demo2").innerHTML = fruits;
+console.log(removed);
+fruits.splice(0,1);
+console.log(fruits);
+var food = ["Burger", "Pizza"];
+food = food.concat(fruits);
+console.log(food);
+food = food.concat("Noodles");
+console.log(food);
+var citrus = fruits.slice(3);
+console.log(fruits);
+console.log(citrus);
+food1 = food.slice(1,5);
+console.log(food1);
+
+
+
+
 
 
 
