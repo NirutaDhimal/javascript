@@ -426,6 +426,7 @@ console.log(myNumber.toString(16));
 */
 
 //Numbers methods
+/*
 
 //toString() method returns a number as a string
 console.log((123).toString());
@@ -474,6 +475,54 @@ console.log(Number.MIN_VALUE);
 console.log(Number.POSITIVE_INFINITY);
 console.log(Number.NEGATIVE_INFINITY);
 console.log(Number.NaN);
+*/
+
+//Javascript Arrays
+var cars = ["Saab", "Volvo", "BMW", "SUV"];
+var students = new Array("Niruta", "Darpan", "Avaya");
+console.log(cars[0]);
+cars[0] = "Audi";
+console.log(cars[0]);
+console.log(cars);
+var myArray = [];
+myArray[0] = Date.now();
+myArray[1] = cars;
+console.log(myArray);
+//Array properties and methods
+console.log(cars.length);
+console.log(cars.sort());
+console.log(cars[cars.length - 1]);
+
+//Looping through Arrays
+var fruits, text, fLen, i;
+fruits = ["Banana", "Orange", "Apple", "Mango"];
+fLen = fruits.length;
+
+text = "<ul>";
+for (i = 0; i < fLen; i++) {
+  text += "<li>" + fruits[i] + "</li>";
+}
+text += "</ul>";
+document.getElementById("demo").innerHTML = text;
+
+//Array.forEach() function
+var fruits, text;
+fruits = ["Apple", "Mango", "Orange", "Banana", "Grapes", "Guava"];
+text = "<ul>";
+
+fruits.forEach(myFunction);
+text += "</ul>";
+document.getElementById("demo1").innerHTML = text;
+
+function myFunction(value){
+       text += "<li>" + value + "</li>";
+}
+
+//adding new element in array
+fruits.push("Watermelon");
+console.log(fruits);
+console.log(Array.isArray(fruits));
+document.getElementById("demo2").innerHTML = fruits instanceof Array;
 
 
 
