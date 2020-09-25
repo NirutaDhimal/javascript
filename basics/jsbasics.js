@@ -536,6 +536,7 @@ fruits.pop();
 document.getElementById("demo2").innerText = fruits;
 document.getElementById("demo3").innerHTML = fruits.push("kiwi");
 */
+/*
 console.log(fruits);
 fruits.shift();
 document.getElementById("demo").innerText = fruits;
@@ -558,6 +559,120 @@ console.log(fruits);
 console.log(citrus);
 food1 = food.slice(1,5);
 console.log(food1);
+*/
+
+//JS Array sort
+document.getElementById("demo").innerHTML = fruits.sort();
+document.getElementById("demo1").innerHTML = fruits.reverse();
+var points = [100,200,5,10,20,25,6,7,2,1];
+document.getElementById("demo2").innerHTML = points;
+function myFunction(){
+       points.sort(function(a,b) {return a-b;});
+       document.getElementById("demo2").innerHTML = points;
+}
+
+function myFunctionDec(){
+       points.sort(function(a,b){return b-a});
+       document.getElementById("demo3").innerHTML = points;
+}
+
+//The Fisher Yates Method(Modern Method)
+function mySortRandom(){
+       var i,j,k;
+       for(i = points.length -1 ;i > 0; i--){
+              j = Math.floor(Math.random() * i);
+              k = points[i];
+              points[i] = points[j];
+              points[j] = k; 
+       }
+       document.getElementById("demo4").innerHTML = points;
+}
+
+//Highest or lowest array value
+/*
+function myArrayMax(arr){
+       return Math.max.apply(null,arr);
+}
+document.getElementById("demo5").innerHTML = myArrayMax(points);
+function myArrayMin(arr){
+       return Math.min.apply(null,arr);
+}
+document.getElementById("demo6").innerHTML = myArrayMin(points);
+*/
+
+//My MIN/MAX JavaScript Method
+
+function myArrayMax(arr){
+       var len = arr.length;
+       var max = -Infinity;
+       while(len--){
+              if(arr[len] > max){
+                     max = arr[len]; 
+              }
+       }
+       return max;
+}
+document.getElementById("demo5").innerHTML = myArrayMax(points);
+
+function myArrayMin(arr){
+       var len = arr.length;
+       var min = Infinity;
+       while(len--){
+              if (arr[len] < min){
+                     min = arr[len];
+              }
+       }
+       return min;
+}
+document.getElementById("demo6").innerHTML = myArrayMin(points);
+
+//Sorting Array Objects
+var cars = [
+       {type: "Volvo", year: 2016},
+       {type: "Saab", year: 2010},
+       {type: "BMW", year: 2020},
+]
+
+displayCars();
+
+
+function listCarSort(){
+       cars.sort(function(a,b){ return(a.year - b.year);})
+       displayCars();
+
+}
+
+
+
+function displayCars() {
+       document.getElementById("demo7").innerHTML =
+       cars[0].type + " " + cars[0].year + "<br>" +
+       cars[1].type + " " + cars[1].year + "<br>" +
+       cars[2].type + " " + cars[2].year;
+}
+
+displayCars1();
+
+//Sorting Array Objects By Name
+function sortByName(){
+       cars.sort(function(a, b){
+              var x = a.type.toLowerCase();
+              var y = b.type.toLowerCase();
+              if (x < y) {return -1;}
+              if (x > y) {return 1;}
+              return 0;
+       });
+
+       displayCars1();
+}
+
+function displayCars1() {
+       document.getElementById("demo8").innerHTML =
+       cars[0].type + " " + cars[0].year + "<br>" +
+       cars[1].type + " " + cars[1].year + "<br>" +
+       cars[2].type + " " + cars[2].year;
+}
+
 
 
 
