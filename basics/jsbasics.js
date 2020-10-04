@@ -562,6 +562,7 @@ console.log(food1);
 */
 
 //JS Array sort
+/*
 document.getElementById("demo").innerHTML = fruits.sort();
 document.getElementById("demo1").innerHTML = fruits.reverse();
 var points = [100,200,5,10,20,25,6,7,2,1];
@@ -601,6 +602,7 @@ document.getElementById("demo6").innerHTML = myArrayMin(points);
 */
 
 //My MIN/MAX JavaScript Method
+/*
 
 function myArrayMax(arr){
        var len = arr.length;
@@ -672,10 +674,76 @@ function displayCars1() {
        cars[1].type + " " + cars[1].year + "<br>" +
        cars[2].type + " " + cars[2].year;
 }
+*/
 
+//Js Array Iteration
+var txt = "";
+var arr = [45,55,65,78,98];
+arr.forEach(myfunction);
+document.getElementById("demo").innerHTML = txt ;
 
+function myfunction(value){
+       txt = txt + value + '<br>';
+}
 
+//Array.map()
+var num = arr.map(myfunc);
+document.getElementById("demo1").innerHTML = num;
 
+function myfunc(value){
+       return value*2 ;
+}
+
+//Array.filter()
+var over50 = arr.filter(myfunc1);
+document.getElementById("demo2").innerHTML = over50;
+
+function myfunc1(value, index, array){
+       if (value > 50){
+            return value;
+       }
+}
+
+//Array.reduce()
+var numbers = [45, 4, 9, 16, 25];
+var sum = numbers.reduce(myFunction);
+
+document.getElementById("test").innerHTML = "The sum is " + sum;
+
+function myFunction(total, value, index, array) {
+  return total + value;
+}
+
+//Array.reduceRight()
+var sum1 = num.reduceRight(myFunction);
+document.getElementById("test1").innerHTML = "The sum is " + sum1 ;
+
+//Array.every()
+var allover60 = arr.every(myfuncs);
+document.getElementById("test2").innerHTML = "All over 60 is " + allover60;
+function myfuncs(value,index,array){
+       return value > 60;
+}
+
+//Array.some()
+var someover60 = arr.some(myfuncs);
+document.getElementById("test3").innerHTML = "Some over 60 is " +someover60;
+
+//Array.indexOf()
+var fruits = ["Apple", "Banana", "Cherry", "Mango","Apple", "Pineapple"];
+var a = fruits.indexOf("Apple");
+document.getElementById("fruits").innerHTML = "The available fruits are: <br>" + fruits;
+document.getElementById("test4").innerHTML = "The Index of Apple is " + a ;
+var b = fruits.lastIndexOf("Apple");
+document.getElementById("test5").innerHTML = "The last index of Apple is " + b;
+
+//Array.find()
+var first = arr.find(myfuncs);
+document.getElementById("test6").innerHTML = "The first element that is greater than 60 in arr is " + first;
+
+//Array.findIndex()
+var firstindex = arr.findIndex(myfuncs);
+document.getElementById("test7").innerHTML = "The index of first element that is greater than 60 in arr is " + firstindex ;
 
 
 
