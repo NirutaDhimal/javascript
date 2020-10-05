@@ -527,9 +527,10 @@ document.getElementById("demo2").innerHTML = fruits instanceof Array;
 */
 
 //JS Array Methods
+/*
 var fruits = ["Apple", "Mango", "Orange", "Banana", "Grapes", "Guava"];
 var x = fruits.toString()
-/*
+
 document.getElementById("demo").innerHTML = x;
 document.getElementById("demo1").innerHTML = fruits.join("*");
 fruits.pop();
@@ -677,6 +678,7 @@ function displayCars1() {
 */
 
 //Js Array Iteration
+/*
 var txt = "";
 var arr = [45,55,65,78,98];
 arr.forEach(myfunction);
@@ -744,7 +746,40 @@ document.getElementById("test6").innerHTML = "The first element that is greater 
 //Array.findIndex()
 var firstindex = arr.findIndex(myfuncs);
 document.getElementById("test7").innerHTML = "The index of first element that is greater than 60 in arr is " + firstindex ;
+*/
 
 
+//JS Date
+var d = new Date()
+document.getElementById("demo").innerHTML = "The current data and time is " + d;
+
+//creating date object
+var date = new Date(2019,11,13,5,26,30,23);
+document.getElementById("demo1").innerHTML = "The given date and time is <br> " + date;
+
+var d1 = new Date(2018,7,20,13,5,20);
+document.getElementById("demo2").innerHTML = "The specifies date and time is <br> " + d1;
+
+var d2 = new Date(2019, 2,5,5);
+document.getElementById("test").innerHTML = "The date and time is <br> " + d2 ;
+
+var d3 = new Date(2020);
+document.getElementById("test1").innerHTML = "Giving only one parameter to the new Date() constructor treats it as miliseconds. <br> " + d3;
+
+//Previous Century
+var p = new Date(99,7,20);
+document.getElementById("test2").innerHTML = "One or two digit years will be interpreted as 19xx. <br>"+ p;
+var s = new Date(9,2,4);
+document.getElementById("test3").innerHTML = s;
+//new Date(date String)
+var nd = new Date("August 20, 1999  13:5:30");
+document.getElementById("test4").innerHTML = "new Date(datestring) creates a new date object from a date String. <br>" + nd;
+
+var origin = new Date(0);
+txt = "JavaScript stores dates as number of milliseconds since January 01, 1970, 00:00:00 UTC (Universal Time Coordinated).<br> Zero time is January 01, 1970 00:00:00 UTC.<br>new Date(milliseconds) creates a new date object as zero time plus milliseconds:<br>";
+document.getElementById("test6").innerHTML = txt + origin;
+document.getElementById("test7").innerHTML = origin.toUTCString();
+document.getElementById("fruits").innerHTML = origin.toDateString();
+document.getElementById("try").innerHTML = origin.toISOString();
 
 
