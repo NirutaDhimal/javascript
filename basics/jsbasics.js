@@ -782,4 +782,36 @@ document.getElementById("test7").innerHTML = origin.toUTCString();
 document.getElementById("fruits").innerHTML = origin.toDateString();
 document.getElementById("try").innerHTML = origin.toISOString();
 
+//ISO Date
+var date1 = new Date("2020-05-21");
+console.log(date1);
+var date2 = new Date("2020-4");
+console.log(date2);
+var date3 = new Date("2015");
+console.log(date3);
+d = new Date("2020-05-08T12:50:20Z");
+console.log(d);
+d1 = new Date("2020-05-08T20:30:20-06:50");
+console.log(d1);
+
+//JS Short Dates("MM/DD/YYYY")
+d = new Date("03/25/2020");
+console.log(d);
+
+//JS long Dates("MMM DD YYYY")
+d = new Date("Aug 20 1999");
+console.log(d);
+d = new Date("25 Mar 2020");
+console.log(d);
+d = new Date("January 5 2020");
+console.log(d);
+d = new Date("January 25, 2015");
+console.log(d);
+
+//Date inputs- parsing dates
+var msec = Date.parse("25 jan 2015");
+console.log(msec);
+d = new Date(msec);
+document.getElementById("test5").innerHTML = d;
+
 
