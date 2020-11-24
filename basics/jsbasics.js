@@ -815,3 +815,30 @@ d = new Date(msec);
 document.getElementById("test5").innerHTML = d;
 
 
+//JS Date get methods
+d = new Date()
+document.getElementById("demo3").innerHTML = d;
+
+var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+console.log(d.getFullYear());
+console.log(months[d.getMonth()]);
+console.log(d.getDate());
+console.log(days[d.getDay()]);
+console.log(d.getHours());
+console.log(d.getMinutes());
+console.log(d.getSeconds());
+console.log(d.getMilliseconds());
+console.log(d.getTime());
+
+//UTC date methods
+console.log(d.getUTCFullYear());
+console.log(months[d.getUTCMonth()]);
+console.log(d.getUTCDate());
+console.log(days[d.getUTCDay()]);
+console.log(d.getUTCHours());
+console.log(d.getUTCMinutes());
+console.log(d.getUTCSeconds());
+console.log(d.getUTCMilliseconds());
+
