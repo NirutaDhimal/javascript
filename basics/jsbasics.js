@@ -842,3 +842,26 @@ console.log(d.getUTCMinutes());
 console.log(d.getUTCSeconds());
 console.log(d.getUTCMilliseconds());
 
+//JS date set methods
+d = new Date();
+d.setFullYear(2019);
+console.log(d);
+d.setFullYear(2019,11,3);
+console.log(d);
+d.setMonth(3);
+console.log(d);
+d.setDate(23);
+console.log(d);
+d.setHours(22);
+console.log(d);
+d.setMinutes(50);
+console.log(d);
+d.setSeconds(30);
+console.log(d);
+d.setMilliseconds(444);
+console.log(d);
+d.setTime(5347890287654);
+console.log(d);
+d.setDate(d.getDate() + 55);
+console.log(d);
+
