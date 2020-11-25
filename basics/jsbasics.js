@@ -748,7 +748,7 @@ var firstindex = arr.findIndex(myfuncs);
 document.getElementById("test7").innerHTML = "The index of first element that is greater than 60 in arr is " + firstindex ;
 */
 
-
+/*
 //JS Date
 var d = new Date()
 document.getElementById("demo").innerHTML = "The current data and time is " + d;
@@ -864,4 +864,31 @@ d.setTime(5347890287654);
 console.log(d);
 d.setDate(d.getDate() + 55);
 console.log(d);
+*/
 
+//JS Math Object
+document.getElementById("demo").innerHTML = Math.PI;
+console.log(Math.round(5.7));
+console.log(Math.round(4.4));
+console.log(Math.pow(5,2));
+console.log(Math.sqrt(64));
+console.log(Math.abs(-2.5));
+console.log(Math.ceil(4.3));
+console.log(Math.floor(5.7));
+console.log(Math.sin(30 * Math.PI / 180));
+console.log(Math.sin(30));
+console.log(Math.cos(60 * Math.PI / 180));
+console.log(Math.cos(0));
+console.log(Math.min(20,4,3,5,-6,-8,3000));
+console.log(Math.max(300,250,600,5000,-25));
+console.log(Math.random());
+
+//JS Math properties(constant)
+console.log(Math.PI);
+console.log(Math.E);   // returns Euler's number
+console.log(Math.SQRT2); //returns square root of 2
+console.log(Math.SQRT1_2); //returns square root of 1/2
+console.log(Math.LN2); //returns natural logarithm of 2
+console.log(Math.LN10); //returns natural logarithm of 10
+console.log(Math.LOG2E); //returns base 2 logarithm of E
+console.log(Math.LOG10E); //returns base 10 logarithm of E
