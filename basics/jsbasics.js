@@ -866,6 +866,7 @@ d.setDate(d.getDate() + 55);
 console.log(d);
 */
 
+/*
 //JS Math Object
 document.getElementById("demo").innerHTML = Math.PI;
 console.log(Math.round(5.7));
@@ -892,3 +893,26 @@ console.log(Math.LN2); //returns natural logarithm of 2
 console.log(Math.LN10); //returns natural logarithm of 10
 console.log(Math.LOG2E); //returns base 2 logarithm of E
 console.log(Math.LOG10E); //returns base 10 logarithm of E
+*/
+
+// JS Random
+document.getElementById("demo").innerHTML = Math.random();
+//JS Random Integers
+console.log(Math.floor(Math.random() * 10 ));
+console.log(Math.floor(Math.random() * 100));
+console.log(Math.floor(Math.random() * 11));
+console.log(Math.floor(Math.random() * 101));
+console.log(Math.floor(Math.random() * 10) + 1);
+console.log(Math.floor(Math.random() * 100) + 1);
+//A proper random function
+function getRNDInteger(mini, maxi){
+       return Math.floor(Math.random() * (maxi-mini)) + mini ;
+}
+
+function getRNDInteger2(mini, maxi){
+       return Math.floor(Math.random() * (maxi- mini + 1)) + mini;
+}
+//getRNDInteger2 returns random number between maximum and minimum value with maximum included
+
+console.log(getRNDInteger(5,20));
+console.log(getRNDInteger2(20,50));
