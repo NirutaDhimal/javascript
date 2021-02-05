@@ -921,6 +921,7 @@ console.log(getRNDInteger2(20,50));
 
 //JS conditions
 //if condition
+/*
 time = 19; 
 if(time < 10){
        greeting = "Good Morning!";
@@ -993,4 +994,36 @@ for(x in person){
        txt += person[x] + " ";
 }
 document.getElementById("test1").innerHTML = txt;
+*/
 
+// JS labels
+/*
+var cars = ["BMW", "Volvo", "Saab", "Ford"];
+text = "";
+list: {
+  text += cars[0] + "<br>";
+  text += cars[1] + "<br>";
+  break list;
+  text += cars[2] + "<br>";
+  text += cars[3] + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo1").innerHTML = isArray(fruits);
+
+function isArray(myArray) {
+  return myArray.constructor.toString().indexOf("Array") > -1;
+}
+
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo2").innerHTML = isArray(fruits);
+
+function isArray(myArray) {
+  return myArray.constructor === Array;
+}
+
+console.log(String(123));
+console.log((123).toString());
+console.log((123+23).toString());
+*/
