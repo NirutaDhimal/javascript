@@ -896,6 +896,7 @@ console.log(Math.LOG10E); //returns base 10 logarithm of E
 */
 
 // JS Random
+/*
 document.getElementById("demo").innerHTML = Math.random();
 //JS Random Integers
 console.log(Math.floor(Math.random() * 10 ));
@@ -916,3 +917,80 @@ function getRNDInteger2(mini, maxi){
 
 console.log(getRNDInteger(5,20));
 console.log(getRNDInteger2(20,50));
+*/
+
+//JS conditions
+//if condition
+time = 19; 
+if(time < 10){
+       greeting = "Good Morning!";
+} else if (time < 18){
+       greeting = "Good Day!";
+}
+else {
+       greeting = "Good evening!";
+}
+
+document.getElementById("demo").innerHTML = greeting;
+
+//switch statement
+switch (new Date().getDay()){
+       case 0:
+         day = "Sunday";
+         break;
+       case 1:
+         day = "Monday";
+         break;
+       case 2:
+          day = "Tuesday";
+         break;
+       case 3:
+         day = "Wednesday";
+         break;
+       case 4:
+         day = "Thursday";
+         break;
+       case 5:
+         day = "Friday";
+         break;
+       case 6:
+         day = "Saturday";
+     }
+document.getElementById("demo1").innerHTML = day
+
+switch (new Date().getDay()) {
+       case 4:
+       case 5:
+         text = "Soon it is Weekend";
+         break;
+       case 0:
+       case 6:
+         text = "It is Weekend";
+         break;
+       default:
+         text = "Looking forward to the Weekend";
+     }
+document.getElementById("demo2").innerHTML = text
+
+//For loop
+
+cars = ["BMW", "Volvo", "Ford", "Tesla", "Toyota", "Mercedes"];
+for (i = 0, len = cars.length, text = ""; i<len; i++)
+{
+       text += cars[i] + "<br>";
+}
+document.getElementById("demo2").innerHTML = text;
+
+//for of
+for(x of cars){
+       document.write(x + "<br>");
+}
+
+//for in 
+var person = {fname : "Niruta", lname: "Dhimal", age: 21};
+txt = ""
+for(x in person){
+       txt += person[x] + " ";
+}
+document.getElementById("test1").innerHTML = txt;
+
