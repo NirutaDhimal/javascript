@@ -1029,6 +1029,7 @@ console.log((123+23).toString());
 */
 
 //JS regular expression
+/*
 var str = "visit w3school!";
 var p = str.search("w3school");
 document.getElementById("demo").innerHTML = p;
@@ -1039,5 +1040,33 @@ document.getElementById("demo1").innerhtml = res;
 var patt = /e/ ;
 console.log(patt.test("The best things in life are those that comes free!"));
 console.log(patt.exec("The best things in life are those that comes free!"));
+*/
 
+//JS errors
+try{
+       adddlert("Welcome guests!")
+}
+catch(err){
+       document.getElementById("demo").innerHTML = err.message;
 
+}
+function myFunction1()
+{
+  var message1, x;
+  message1 = document.getElementById("p01");
+  message1.innerHTML = " ";
+  x = document.getElementById("demo10").value;
+  try {
+    if(x == "") throw "empty";
+    if(isNaN(x)) throw "not a number";
+    x = Number(x);
+    if(x < 5) throw "too low";
+    if(x > 10) throw "too high";
+  }
+  catch(err) {
+    message1.innerHTML = "Input is " + err;
+  }
+  finally {
+       document.getElementById("demo10").value = "";
+     }
+}
