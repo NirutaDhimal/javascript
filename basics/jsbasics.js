@@ -1027,3 +1027,17 @@ console.log(String(123));
 console.log((123).toString());
 console.log((123+23).toString());
 */
+
+//JS regular expression
+var str = "visit w3school!";
+var p = str.search("w3school");
+document.getElementById("demo").innerHTML = p;
+var n = str.search(/w3school/i);
+console.log(n);
+var res = str.replace("Microsoft", "w3school");
+document.getElementById("demo1").innerhtml = res;
+var patt = /e/ ;
+console.log(patt.test("The best things in life are those that comes free!"));
+console.log(patt.exec("The best things in life are those that comes free!"));
+
+
