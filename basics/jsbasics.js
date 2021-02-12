@@ -1043,6 +1043,7 @@ console.log(patt.exec("The best things in life are those that comes free!"));
 */
 
 //JS errors
+/*
 try{
        adddlert("Welcome guests!")
 }
@@ -1070,3 +1071,21 @@ function myFunction1()
        document.getElementById("demo10").value = "";
      }
 }
+*/
+
+//JS class and objects
+class cars{
+       constructor(name,year){
+              this.name = name;
+              this.year = year;
+       }
+       age() {
+              let date = new Date();
+              return date.getFullYear() - this.year ;
+       }
+}
+let car1 = new cars('Ford', 1999);
+let car2 = new cars('BMW', 2016);
+document.getElementById('demo').innerHTML = "my car is " + car1.name + "of year " + car1.year;
+document.getElementById('demo1').innerHTML = "My car is " + car1.age() + " years old this year."
+
